@@ -1,0 +1,976 @@
+
+	html,
+	body {
+		position: relative;
+		height: 100%;
+	}
+	
+	input[type=button],
+	input[type=submit],
+	input[type=file],
+	button {
+		cursor: pointer;
+		-webkit-appearance: none;
+	}
+	
+	input {
+		outline: none;
+		-webkit-appearance: none;
+		-webkit-appearance: none;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		resize: none;
+		box-sizing: border-box;
+		appearance: button;
+		-moz-appearance: button;
+		/* Firefox */
+		-webkit-appearance: button;
+		/* Safari 和 Chrome */
+	}
+	
+	* {
+		-webkit-tap-highlight-color: transparent;
+		cursor: pointer;
+		outline: none;
+		-webkit-appearance: none;
+	}
+	
+	body {
+		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-size: 12px;
+		color: #000;
+		background: #FFFFFF;
+	}
+	
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	#allbanner {
+	max-width:768px;
+		height: 100%;
+		margin: 0 auto;
+	}
+	/*轮播css*/
+	@media only screen and (max-width:375px) {
+	#allbanner .headswiper {
+		width: 100%;
+		height: 400px;		
+	}
+	}
+	@media only screen and (max-width:414px) {
+	#allbanner .headswiper {
+		width: 100%;
+		height: 450px;		
+	}
+	}
+	@media only screen and (min-width:769px) {
+	#allbanner .headswiper {
+		width: 100%;
+		height: 700px;		
+	}
+	}
+	
+	.headswiper img {
+		width: 100%;
+		height: 100%;
+		background-size: 100%;
+	}
+	/*广告轮播*/
+	/*菜单层*/
+	
+	#Anjia-second {
+		width: 100%;
+		height: auto;
+		background: #F8F8F8;
+		position: relative;
+	}
+	
+	#Anjia-second .second-xiangxi {
+		width: 95%;
+		margin: 0 auto;
+		height: 4rem;
+	}
+	
+	#Anjia-second .second-xiangxi .xiangxi-line {
+		top: 0.35rem;
+		position: relative;
+	}
+	
+	#Anjia-second .second-xiangxi .second-xiangxi-strong {
+		color: #9D2927;
+		top: 0.2rem;
+		position: relative;
+		font-size: 1.4rem;
+	}
+	
+	#Anjia-second .second-xiangxi button {
+		-webkit-border-radius: 3;
+		-moz-border-radius: 3;
+		border-radius: 3px;
+		text-shadow: 0px 1px 0px #darkgray;
+		font-family: Arial;
+		color: black;
+		font-size: 12px;
+		background: #9bcadd;
+		line-height: 1.5rem;
+		height: 1.5rem;
+		width: 22%;
+		margin-left: 1%;
+		border: solid #9bcadd 1px;
+		text-decoration: none;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	
+	#Anjia-second .second-xiangxi button:hover {
+		color: #ffffff;
+		background: red;
+		text-decoration: none;
+	}
+	/*最新动态*/
+	
+	#Anjia-second .second-xiangxi .dongtai {
+		width: 100%;
+		height: 1rem;
+		margin-bottom: 1.5rem;
+	}
+	
+	#Anjia-second .second-xiangxi .dongtai .wrapper {
+		width: 100%;
+	}
+	
+	#Anjia-second .second-xiangxi .dongtai .guanggao {
+		width: 100%;
+		position: relative;
+		padding: 0 0 0 0.5em;
+		margin-left: -8px;
+		border-radius: 3px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		/*//文本不换行，这样超出一行的部分被截取，显示...*/
+	}
+	
+	#Anjia-second .second-xiangxi .dongtai .guanggao ul li a {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	
+	#Anjia-second .second-xiangxi .dongtai .guanggao ul li {
+		list-style: none;
+		padding: 11px 0;
+	}
+	
+	#Anjia-second .second-xiangxi .dongtai .guanggao ul li a {
+		font-size: 12px;
+	}
+	
+	#Anjia-second .second-xiangxi #show-text {
+		transform: scaleX(2) !important;
+	}
+	/*视频*/
+	
+	.m {
+		top: 0.5rem;
+		width: 95%;
+		height: calc(9 * 395px / 16);
+		margin: 0 auto;
+		margin-bottom: 1rem;
+		z-index: 1006;
+		position: relative;
+		background: black;
+	}
+	
+	.m video {
+		width: 100%;
+		overflow: hidden;
+		height: 100%;
+	}
+	/*	/*
+	商品列表*/
+	/* 
+楼盘介绍 */
+	
+	.LBall {
+		width: 95%;
+		height: auto;
+		margin: 0 auto;
+	}
+	
+	.anjia-loupanjieshao {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+		top: 7px;
+		margin-bottom: 15px;
+	}
+	
+	.anjia-loupanjieshao .maidian-thought-1 {
+		display: table;
+		width: 100%;
+		line-height: 32px;
+		font-weight: bold;
+		color: #9D2927;
+		font-size: 1.2rem;
+		white-space: nowrap;
+	}
+	
+	.anjia-loupanjieshao .maidian-thought-1:before,
+	.anjia-loupanjieshao .maidian-thought-1:after {
+		display: table-cell;
+		content: '';
+		width: 50%;
+		background: -webkit-linear-gradient(#9D2927, #9D2927) repeat-x left center;
+		background: linear-gradient(#9D2927, #9D2927) repeat-x left center;
+		background-size: 2px 2px;
+	}
+	
+	.anjia-wenzi {
+		width: 85%;
+		margin: 0 auto;
+		line-height: 18.5px;
+		font-size: 14px;
+		height: auto;
+		margin-top: 11.5px;
+		margin-bottom: 15px;
+	}
+	
+	.anjia-image {
+		width: 100%;
+		height: calc(9 * 395px / 16);
+	}
+	
+	.anjia-image img {
+		width: 100%;
+		height: calc(9 * 395px / 16);
+	}
+	/* 按钮探头 */
+	
+	.tantou {
+		width: 100%;
+		height: 90px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	
+	.tantou .tantou-xinxi {
+		width: 100%;
+		height: 32.5px;
+	}
+	
+	.tantou .tantou-xinxi .tantou-lejie {
+		width: 70%;
+		height: 37.5px;
+		background: #9D2927;
+		color: white;
+		float: left;
+		border: 0;
+		font-size: 14px;
+		border-radius: 0px;
+		box-sizing: border-box;
+	}
+	
+	.tantou .tantou-xinxi .tantou-bodas {
+		width: 29%;
+		height: 37.5px;
+		float: right;
+		border: 0;
+		background: #9D2927;
+		color: white;
+		border-radius: 0px;
+		font-size: 14px;
+		box-sizing: border-box;
+	}
+	
+	.tantou .tantou-xinxi form .yuyuephone {
+		width: 70%;
+		height: 37.5px;
+		float: left;
+		box-sizing: border-box;
+		font-size: 14px;
+		text-indent: 5px;
+		position: relative;
+		top: 7px;
+		border: 1px gainsboro solid;
+	}
+	
+	.tantou .tantou-xinxi form .yuyuebtn {
+		width: 29%;
+		height: 37.5px;
+		float: right;
+		background: #9D2927;
+		font-size: 14px;
+		border-radius: 0px;
+		border: 0;
+		position: relative;
+		top: 7px;
+		box-sizing: border-box;
+		color: white;
+	}
+	/*	底部查看户型*/
+	
+	.footerswiper {
+		width: 95%;
+		height: 470px;
+		margin: 0 auto;
+	
+		overflow: hidden;
+	}
+	
+	.anjia-table {
+		width: 100%;	
+	    background-size: 100% 100%;
+        height: 133px;
+		background-image: url('http://www.anjiazhixun.com/img/icon/border-PC.png');
+	}
+
+		.anjia-table .table-nr {
+		width: 90%;
+		margin: 0 auto;
+		
+		position: relative;
+		top: 11.5px;
+	}
+	
+	
+	.anjia-table .table-nr .left {
+		width: 45%;
+		height: 85px;
+		float: left;
+		margin-top: 9px;
+		line-height: 30px;
+		overflow: hidden;
+	}
+	
+	.anjia-table .table-nr .left .table-wenzi {
+		font-size: 17.5px;
+	}
+	
+	.anjia-table .table-nr .right {
+		width: 53%;
+		height: 85px;
+		margin-top: 9px;
+		line-height: 30px;
+		overflow: hidden;
+		float: right;
+	}
+	
+	.anjia-table .table-nr .right .table-wenzi {
+		font-size: 17.5px;
+	}
+	
+	.anjia-tables {
+		width: 100%;
+		height: 355px;
+		overflow: hidden
+	}
+	
+	.anjia-tables img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.footerswiper .footerprev {
+		position: absolute;
+		top: 65%;
+		width: 27px;
+		height: 44px;
+		margin-top: -22px;
+		z-index: 10;
+		cursor: pointer;
+		background-size: 27px 44px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	/*	底部拨打*/
+	
+	#Anjia-maidian-5 {
+		width: 95%;
+		margin: 0 auto;
+		margin-bottom: 4.5rem;
+		margin-top: 1rem;
+	}
+	
+	#Anjia-maidian-5 .yuyueinput-2 {
+		width: 68%;
+		height: 2.3rem;
+		text-indent: 5px;
+		float: left;
+		background: #9D2927;
+		border: 0;
+		color: white;
+	}
+	
+	#Anjia-maidian-5 .yuyueajax-2 {
+		-webkit-border-radius: 1;
+		-moz-border-radius: 1;
+		border-radius: 1px;
+		font-family: Arial;
+		color: white;
+		margin-left: 0.15rem;
+		font-size: 1em;
+		background: #9D2927;
+		height: 2.3rem;
+		width: 30.8%;
+		vertical-align: auto;
+		border: solid #9D2927 1px;
+		text-decoration: none;
+	}
+	
+	#Anjia-maidian-5 .yuyueajax-2 a {
+		color: white;
+		text-decoration: none;
+	}
+	/* 底部栏目*/
+	@media only screen and (max-width:375px) {
+		#Anjia-footer {
+		position: fixed;
+		bottom: 0;
+		cursor: pointer;
+       width:375px;
+		z-index: 2000;
+		height: 3.5rem;
+		overflow: hidden;
+
+ box-shadow:1px 0px 2px #333033;
+	}
+	
+	#Anjia-footer .Anjia_footer-1 .b1 img {
+		position: relative;
+		top: 5px;
+		height: 2.9rem;
+		width: 3rem;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#Anjia-footer .Anjia_footer-1 .b2 img {
+		position: relative;
+		top: 5px;
+		height: 2.9rem;
+		width: 3rem;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#Anjia-footer .Anjia_footer-1 .b3 img {
+		position: relative;
+		top: 5px;
+		height: 2.9rem;
+		width: 3rem;
+		display: block;
+		margin: 0 auto;
+	}
+	
+		#Anjia-footer .Anjia_footer-1 {
+		width: 18%;
+	
+		
+		height: 3.5rem;
+		color: white;
+		background: #f2f2f2;
+		list-style: none;
+		z-index: 1004;
+		float: left;
+		text-align: center;
+		color: black;
+	}
+	
+	#Anjia-footer .Anjia_footer-2 {
+      width: 46%;
+	
+		
+		height: 3.6rem;
+		color: white;
+		list-style: none;
+		text-align: center;
+		background: #9D2927;
+		float: left;
+	}
+	
+	
+	
+	#Anjia-footer .Anjia_footer-2 .b4 img {
+		position: relative;
+		top: 0.8em;
+		height: 3em;
+		width: 3em;
+	}
+	
+	#Anjia-footer .Anjia_footer-2 span {
+		cursor: pointer;
+		top: -0.2rem;
+		width: 3em;
+		font-size: 1rem;
+		position: relative;
+	}
+	}
+	@media only screen and (max-width:768px) {
+		#Anjia-footer {
+		position: fixed;
+		bottom: 0;
+		cursor: pointer;
+        width:100%;
+		z-index: 2000;
+		height: 3.5rem;
+		overflow: hidden;
+
+ box-shadow:1px 0px 2px #333033;
+	}
+	
+	#Anjia-footer .Anjia_footer-1 .b1 img {
+		position: relative;
+		top: 5px;
+		height: 2.9rem;
+		width: 3rem;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#Anjia-footer .Anjia_footer-1 .b2 img {
+		position: relative;
+		top: 5px;
+		height: 2.9rem;
+		width: 3rem;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#Anjia-footer .Anjia_footer-1 .b3 img {
+		position: relative;
+		top: 5px;
+		height: 2.9rem;
+		width: 3rem;
+		display: block;
+		margin: 0 auto;
+	}
+	
+		#Anjia-footer .Anjia_footer-1 {
+		width: 18%;
+	
+		
+		height: 3.5rem;
+		color: white;
+		background: #f2f2f2;
+		list-style: none;
+		z-index: 1004;
+		float: left;
+		text-align: center;
+		color: black;
+	}
+	
+	#Anjia-footer .Anjia_footer-2 {
+      width: 46%;
+	
+		
+		height: 3.6rem;
+		color: white;
+		list-style: none;
+		text-align: center;
+		background: #9D2927;
+		float: left;
+	}
+	
+	
+	
+	#Anjia-footer .Anjia_footer-2 .b4 img {
+		position: relative;
+		top: 0.8em;
+		height: 3em;
+		width: 3em;
+	}
+	
+	#Anjia-footer .Anjia_footer-2 span {
+		cursor: pointer;
+		top: -0.2rem;
+		width: 3em;
+		font-size: 1rem;
+		position: relative;
+	}
+	}
+		@media only screen and (min-width:769px) {
+		#Anjia-footer {
+		position: fixed;
+		bottom: 0;
+		cursor: pointer;
+        width:768px;
+		z-index: 2000;
+		height: 3.5rem;
+		overflow: hidden;
+
+ box-shadow:1px 0px 2px #333033;
+	}
+	
+	#Anjia-footer .Anjia_footer-1 .b1 img {
+		position: relative;
+		top: 5px;
+		height: 2.9rem;
+		width: 3rem;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#Anjia-footer .Anjia_footer-1 .b2 img {
+		position: relative;
+		top: 5px;
+		height: 2.9rem;
+		width: 3rem;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#Anjia-footer .Anjia_footer-1 .b3 img {
+		position: relative;
+		top: 5px;
+		height: 2.9rem;
+		width: 3rem;
+		display: block;
+		margin: 0 auto;
+	}
+	
+		#Anjia-footer .Anjia_footer-1 {
+		width: 130px;
+	
+		
+		height: 3.5rem;
+		color: white;
+		background: #f2f2f2;
+		list-style: none;
+		z-index: 1004;
+		float: left;
+		text-align: center;
+		color: black;
+	}
+	
+	#Anjia-footer .Anjia_footer-2 {
+      width:378px;
+	
+		
+		height: 3.6rem;
+		color: white;
+		list-style: none;
+		text-align: center;
+		background: #9D2927;
+		float: left;
+	}
+	
+	
+	
+	#Anjia-footer .Anjia_footer-2 .b4 img {
+		position: relative;
+		top: 0.8em;
+		height: 3em;
+		width: 3em;
+	}
+	
+	#Anjia-footer .Anjia_footer-2 span {
+		cursor: pointer;
+		top: -0.2rem;
+		width: 3em;
+		font-size: 1rem;
+		position: relative;
+	}
+	}
+	/*看房补贴*/
+	
+	#butie {
+		height: 70%;
+		width: 100%;
+		display: none;
+		border-radius: 10% 10% 0 0;
+		position: fixed;
+		background: #f2f2f2;
+		box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+		z-index: 1008;
+		bottom: 0;
+	  
+	}
+	
+	#butie .butie-a {
+		position: relative;
+		
+		width: 84%;
+		margin: 0 auto;
+		margin-bottom: 10vw;
+	}
+	
+	#butie .butie-a p {
+		margin-bottom: 0.5rem;
+	}
+	
+	#butie .butie-a .maifang-phone {
+		width: 80%;
+		height: 2rem;
+		border: 1px #73859F;
+	}
+	
+	#butie .butie-a .maifang-phone::-webkit-input-placeholder {
+		color: #9D2927;
+		text-align: right;
+		font-size: 14px;
+		right: 2px;
+		line-height: 50px;
+	}
+	
+	#butie .butie-a .maifang-name {
+		width: 50%;
+		height: 2rem;
+		border: 1px #73859F;
+		text-indent: 5px;
+	}
+	
+	#butie .butie-a .butieAjax {
+		width: 100%;
+		height: 2.2rem;
+		cursor: pointer;
+		opacity: 0.9;
+		color: #FFF;
+		font-size: 0.8em;
+		letter-spacing: 1px;
+		/* X轴偏移1像素、Y轴偏移2像素、不透明度为0.9的黑色文本阴影 */
+		text-shadow: rgba(0, 0, 0, 0.9) 0px 1px 2px;
+		background: #9D2927;
+		border: 1px solid #242424;
+		border-radius: 3px;
+		box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px, inset rgba(255, 255, 255, 0.25) 0px 1px 0px, inset rgba(0, 0, 0, 0.25) 0px 0px 0px, inset rgba(255, 255, 255, 0.03) 0px 20px 0px, inset rgba(0, 0, 0, 0.15) 0px -20px 20px, inset rgba(255, 255, 255, 0.05) 0px 20px 20px;
+		/* 让变化的属性在100毫秒内匀速过渡 */
+		transition: all 0.1s linear;
+	}
+	
+	#butie .butie-a .butie-erweima {
+		height: 30%;
+		width: 30%;
+	}
+	
+	#butie .butie-a .sex {
+		width: 15px;
+		height: 15px;
+	}
+	/*留言弹框*/
+	
+	#liuyan {
+		height: 70%;
+		width: 100%;
+		display: none;
+		border-radius: 10% 10% 0 0;
+		position: fixed;
+		box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+		background: #f2f2f2;
+		z-index: 1008;
+		bottom: 0;
+	}
+	
+	#liuyan .liuyan-a {
+		position: relative;
+		height: 90%;
+		width: 84%;
+		margin: 0 auto;
+	}
+	
+	#liuyan .liuyan-a p {
+		margin-bottom: 1rem;
+	}
+	
+	#liuyan .liuyan-a .liuyan-phone {
+		width: 80%;
+		height: 2rem;
+		border: 1px #73859F;
+	}
+	
+	#liuyan .liuyan-a .liuyan-phone::-webkit-input-placeholder {
+		color: #9D2927;
+		text-align: right;
+		font-size: 14px;
+		right: 2px;
+	}
+	
+	#liuyan .liuyan-a .liuyan-name {
+		width: 50%;
+		height: 2rem;
+		border: 1px #73859F;
+		text-indent: 5px;
+	}
+	
+	#liuyan .liuyan-a .liuyanAjax {
+		width: 100%;
+		height: 2.2rem;
+		cursor: pointer;
+		opacity: 0.9;
+		color: #FFF;
+		font-size: 0.8em;
+		letter-spacing: 1px;
+		/* X轴偏移1像素、Y轴偏移2像素、不透明度为0.9的黑色文本阴影 */
+		text-shadow: rgba(0, 0, 0, 0.9) 0px 1px 2px;
+		background: #9D2927;
+		border: 1px solid #242424;
+		border-radius: 3px;
+		box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px, inset rgba(255, 255, 255, 0.25) 0px 1px 0px, inset rgba(0, 0, 0, 0.25) 0px 0px 0px, inset rgba(255, 255, 255, 0.03) 0px 20px 0px, inset rgba(0, 0, 0, 0.15) 0px -20px 20px, inset rgba(255, 255, 255, 0.05) 0px 20px 20px;
+		/* 让变化的属性在100毫秒内匀速过渡 */
+		transition: all 0.1s linear;
+	}
+	
+	#liuyan .liuyan-a .liuyan-lab {
+		vertical-align: top;
+	}
+	/*查看户型*/
+	
+	.black_overlay {
+		display: none;
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		z-index: 1001;
+		-moz-opacity: 0.8;
+		opacity: .80;
+		filter: alpha(opacity=80);
+	}
+	
+	.white_content {
+		display: none;
+		position: fixed;
+		bottom: 0;
+	    margin-bottom: 13.5vw;
+		width: 100%;
+		background-color: white;
+		z-index: 1008;
+		overflow: hidden;
+	}
+	/*<!--户型鉴赏-->*/
+	
+	.swiper-container3 {
+		border-radius: 10% 10% 0 0;
+		width: 100% !important;
+		height: 100% !important;
+		background: #f2f2f2;
+	}
+	
+	.swiper-container3 .gd {
+		position: absolute !important;
+		top: 60% !important;
+		width: 27px !important;
+		height: 44px !important;
+		margin-top: -22px !important;
+		z-index: 10 !important;
+		cursor: pointer;
+		background-size: 27px 44px !important;
+		background-position: center !important;
+		background-repeat: no-repeat !important;
+	}
+	
+	.white_content .swiper-container3 .wenzi-huxing {
+		width: 95%;
+		margin: 0 auto;
+		height: auto;
+		margin-top: 0.1rem;
+	}
+	
+	
+	.white_content .swiper-container3 .wenzi-huxing .dandu {
+		width: 98%;
+		margin: 0 auto;
+		height: 2rem;
+		text-align: center;
+		color: white;
+		line-height: 2rem;
+		background: #9D2927;
+		font-size: 1.1rem;
+	}
+	
+	.white_content .swiper-container3 .wenzi-huxing .left {
+		width: 21%;
+		float: left;
+		text-align: left;
+		font-size: 0.8em;
+		line-height: 1rem;
+	}
+	
+	.white_content .swiper-container3 .wenzi-huxing .right {
+		width: 74%;
+		line-height: 1rem;
+		font-size: 0.8em;
+		float: left;
+		height: 1rem;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	
+	.white_content .swiper-container3 .huxing-img-1 {
+		width: 100%;
+		height: 80.5vw;
+		overflow: hidden;
+		margin-bottom: 5vw;
+	}
+	
+	.white_content .swiper-container3 .huxing-img-1 img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.white_content .swiper-container3 .gaodu {
+		position: relative;
+		top: 1rem;
+	}
+	/*免费拨打电话*/
+#boda{
+		height:15%;
+		width: 80%;
+		display: none;
+
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		z-index: 1003;
+		transform: translate(-50%,-50%);
+	}
+	#boda .dianhua{
+		height: 50%;
+		margin: 0;
+		border-radius:10px 10px 0 0;
+		color: white;
+		font-weight: bold;
+		font-size:1.9rem;
+		text-align: center;
+		line-height:3.2rem;
+		width: 100%;
+		background: #fb7d79;
+	}
+	#boda #bodas{
+		height: 50%;
+		margin: 0;
+		border-radius: 0 0 10px 10px;
+		color: black;
+		font-weight: bold;
+		font-size:1.8rem;
+		text-align: center;
+		line-height:3.2rem;
+		width: 100%;
+		display: block;
+		background: white;
+	}
+	#boda #bodas>a{
+			text-decoration: none;
+		color: black;
+
+		}
+	#boda .dianhua>a{
+
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+		font-size:1.9rem;
+
+	}
+	#boda .dianhua #close{
+		width:30px;
+		height: 30px;
+		float: right;
+		position: relative;
+		top:-10px;
+	}
+	
